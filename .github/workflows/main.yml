@@ -30,7 +30,7 @@ jobs:
       - name: "Definition of version."
         uses: actions/setup-node@v4
         with:
-         node-version: '20.19.6'
+         node-version: '24.12.0'
       - name: "Verification actual version NodeJS after installation."
         run: node --version
       
