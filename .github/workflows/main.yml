@@ -26,10 +26,12 @@ jobs:
     steps:
       - name: "Verification actual version NodeJS."
         run: node --version
-      - name: "Definition of Version."
-      - uses: actions/setup-node@v4
+      - name: "Definition of version."
+        uses: actions/setup-node@v4
         with:
-         node-version: '20.19.6' 
+         node-version: '20.19.6'
+      - name: "Verification actual version NodeJS after installation."
+        run: node --version
       
       
       
