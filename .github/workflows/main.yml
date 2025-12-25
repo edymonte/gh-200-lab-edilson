@@ -21,6 +21,7 @@ jobs:
         shell: python
         
   second-job:
+    needs: first-job
     name: "Installation of the environment NodeJS."
     runs-on: ubuntu-latest
     steps:
